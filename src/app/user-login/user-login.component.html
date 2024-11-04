@@ -1,0 +1,102 @@
+<style>
+    input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: fieldtext !important;
+}
+</style>
+
+<form #userregistration="ngForm" (ngSubmit)="registratioSubmit(userregistration.value)">
+    <div class="container" style="margin-bottom: 50px;" *ngIf="!default">
+        <div class="row">
+            
+          
+            <div class="col-lg-12" style="display:flex;justify-content: center;">
+                <div class="col-lg-7 col-12" style="border:1px solid rgb(214, 214, 214);padding:4%;border-radius: 10px;margin-top: 60px;">
+                    <h4 style="text-align:center;margin-top: 10px;"> REGISTRATION</h4>
+                    <br>
+                    <div class="mb-3">
+                        <div style="position: relative;">
+                            <label style="position: absolute;bottom:19px;left:10px;background-color: white;" for="name" class="form-label" >Name</label>
+                            <input type="text" class="form-control" name="username"  ngModel >
+                        </div>
+                       <br>
+                        <div style="position: relative;">
+                            <label style="position: absolute;bottom:19px;left:10px;background-color: white;" for="number" class="form-label" >Phone Number</label>
+                            <input type="text" class="form-control" name="usernumber"  ngModel>
+    
+                        </div>
+                       <br>
+                        <div  style="position: relative;">
+                            <label style="position: absolute;bottom:25px;left:10px;background-color: white;padding: 0;line-height: 10px;" for="exampleInputEmail1" class="form-label"  >Email address</label>
+                            <input style="text-align: center;" type="email" name="useremail" class="form-control" ngModel >
+                        </div>
+                       <br>
+                        <div style="position: relative;">
+                            <label style="position: absolute;bottom:25px;left:10px;background-color: white;line-height: 10px;"  for="exampleInputPassword1" class="form-label" >Password</label>
+                            <input style="text-align: center;" type="password"  class="form-control" name="userpassword" ngModel>
+                        </div>
+                       
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <a  style="cursor:pointer;text-align: center;" (click)="openuserlogin()">Already have an account ? click to login</a>
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <div style="display: flex;justify-content: center;">
+                        <button  type="submit" class="btn" style="width:50%;height:40px;background-color: rgb(155, 163, 184);color:aliceblue ;font-weight: bold;">SUBMIT</button>
+                        <button type="reset" id="r1"  style="border:none;display: none;"></button>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+  </form>
+
+  <form #userlogin="ngForm" (ngSubmit)="matchUserLogin(userlogin.value)">
+    <div class="container" style="margin-bottom: 50px;" *ngIf="default">
+        <div class="row">
+            
+           
+            <div class="col-lg-12" style="display:flex;justify-content: center;">
+               
+                <div  class="col-lg-7 col-12" style="border:1px solid rgb(214, 214, 214);padding:4%;border-radius: 10px;margin-top: 60px;">
+                    <h4 style="text-align:center;margin-top: 10px;margin-bottom: 40px;"> Loign</h4>
+                    <div class="mb-3">
+                       
+                        <div  style="position: relative;">
+                            <label style="position: absolute;bottom:25px;left:10px;background-color: white;padding: 0;line-height: 10px;" for="exampleInputEmail1" class="form-label"  >Email address</label>
+                            <input style="text-align: center;" type="email" class="form-control" name="useremail"  ngModel >
+                        </div>
+                       <br>
+                        <div style="position: relative;">
+                            <label style="position: absolute;bottom:25px;left:10px;background-color: white;line-height: 10px;"  for="exampleInputPassword1" class="form-label" >Password</label>
+                            <input style="text-align: center;" type="password" class="form-control" name="userpassword" ngModel>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <a  style="cursor:pointer" (click)="openusersignup()">Don't have an account ? click here to Signup</a>
+
+                    </div>
+                   
+                    <br>
+                    <br>
+                    <div style="display: flex;justify-content: center;">
+                        <button type="submit" class="btn" style="width:50%;height:40px;background-color: rgb(155, 163, 184);color:aliceblue ;font-weight: bold;">SUBMIT</button>
+                        <button type="reset" id="r2"  style="border:none;display: none;"></button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+  </form>
+

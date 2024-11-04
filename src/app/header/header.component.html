@@ -1,0 +1,334 @@
+<style>
+
+.navbar{
+  box-shadow: 2px 3px 8px -2px rgb(61, 61, 61);
+}
+
+  @media screen and (min-device-width: 900px) and (max-device-width: 2000px) { 
+    
+    .link2{
+      padding-left: 5vw;
+    }
+    .rescart{
+      display: none;
+    }
+    .cart{
+      height:0px;
+      transition: all 0.5s;position: absolute;width:20vw;z-index: 999;top:4vw;background-color: white;right:-5vw;
+      overflow-y:scroll ;
+      scrollbar-width: 2%;
+  }
+  .changepo{
+   height:50vh;
+  }
+  .navbar{
+    position:fixed;z-index:9999;width: 100%;
+  }
+  .cart_link{
+    overflow: hidden;
+  }
+  .items{
+    height:35%;display: flex;justify-content: space-between;padding: 5%;border-bottom: 1px solid rgb(204, 204, 204);
+  }
+ 
+  .img_div{
+    width:40%;
+    height:30%;
+    align-content: center;
+    
+  }
+  .image{
+    width:60%;
+   
+  }
+  .name{
+    font-size: 0.9vw;
+  }
+  .cart-btn{
+    margin-top: 2vh;
+  }
+  .price{
+    font-size: 70%;
+  }
+  .price_name{
+    
+    align-content: center;
+  }
+  
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 700px) { 
+  .cart2height{
+    height:30vh;
+  }
+    .cart{
+      height:0px;
+      width:95%;
+      transition: all 0.5s;
+      background-color: white;
+      overflow-y:scroll ;
+      scrollbar-width: 2%;
+      position: absolute;top:120%;
+      left:2%;
+      display: none;
+  }
+  .items{
+    align-items: center;height:30%;display: flex;justify-content: space-between;padding: 5%;border-bottom: 1px solid rgb(204, 204, 204);
+  }
+  .img_div{
+    width:30%;
+    
+    
+  }
+  .image{
+    width:70px;
+    
+  }
+  .items h5{
+    font-size: 100%;
+  }
+   .name{
+    font-size: 3vw;
+  }
+  .cart-btn{
+    margin-top: 5%;
+  }
+  .changepo{
+   height:50vh;
+  }
+  .cart_link{
+    display:none;
+  }
+  .navbar-toggler{
+   left: 67vw;
+   top:1%;
+   position: fixed;
+  }
+  .cart2{
+    
+    height:40vh;
+      width:95%;
+      transition: all 0.5s;
+      background-color: white;
+      overflow-y:scroll ;
+      scrollbar-width: 2%;
+      position: absolute;top:140%;
+      left:2%;
+     
+      
+
+  }
+}
+@media screen and (min-device-width: 700px) and (max-device-width: 900px) { 
+  .cart2{
+    
+    height:40vh;
+      width:95%;
+      transition: all 0.5s;
+      background-color: white;
+      overflow-y:scroll ;
+      scrollbar-width: 2%;
+      position: absolute;top:140%;
+      left:2%;
+     
+      
+
+  }
+ .cart{
+   height:0px;
+   width:60%;
+   transition: all 0.5s;
+   background-color: white;
+   overflow-y:scroll ;
+   scrollbar-width: 2%;
+   position: absolute;top:150%;
+   left:40%
+}
+.items{
+ align-items: center;height:30%;display: flex;justify-content: space-between;padding: 5%;border-bottom: 1px solid rgb(204, 204, 204);
+}
+.img_div{
+ width:50%;
+ 
+ 
+}
+.image{
+ width:50%;
+ 
+}
+.items h5{
+ font-size: 100%;
+}
+.name{
+ font-size: 80%;
+}
+.cart-btn{
+ margin-top: 10%;
+}
+.changepo{
+height:40vh;
+}
+.cart_link{
+ display:none;
+}
+.navbar-toggler{
+left: 67vw;
+top:1%;
+position: fixed;
+}
+}
+
+.nav-link h6{
+  color:rgb(2, 2, 146)
+}
+.navbar{
+  width:100%;background-color:#fff;position: fixed;z-index: 999999;
+}
+.na{
+  position: relative;
+}
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light " >
+    <div class="na container"  >
+      <a class="navbar-brand" routerLink="home">Logo</a>
+      <button  style="border:1px solid black;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="rescart" (click)="cartOpen2()"   type="button" style="margin-right:5vw;border: none;background-color: transparent;" >
+        <i style="font-size: 26px;color:rgb(8, 8, 151)" class="fa-solid fa-cart-arrow-down"></i>
+      </button>
+       <div class=" cart2" *ngIf="openCart2" style="border-radius: 5px;box-shadow: 3px 5px 11px 0px rgb(76, 77, 77); ;">
+        <div class="main_cart" >
+          <div class="items"  *ngFor="let it of allcartitems">
+            <div class="img_div" >
+              <img class="image"   src="{{it.p6}}" >
+            </div>
+             
+            <div>
+              <h5> Price:${{it.p2}}</h5>
+              <div class="name" >{{it.p1}}</div>
+            </div>
+          </div>
+        </div>  
+        <div *ngIf="opeoops" class="empty_cart"  style="height:100%;width:100%;display: flex;justify-content: center;align-items: center;">
+          Oops Sorry! No items
+        </div>     
+        
+       
+            
+           <div class="total" style="padding:5%;display: flex;justify-content: space-between;">
+            <h5>Total</h5>
+            <h5>$</h5>
+           </div>
+           <div class="cart-btn" style="padding: 5%;">
+            <div class="buttn"  style="height:45px;width:100%;border: 1px solid rgb(155, 163, 184);display: flex;justify-content: center;align-items: center;">
+                   <h5 style="color:rgb(155, 163, 184)" routerLink="cartpage">VIEW CART</h5>
+            </div>
+              
+           </div>
+      </div> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="display:flex;justify-content: space-between;">
+          <li class="nav-item link2" *ngIf="!sellermenu">
+            <a class="nav-link active" aria-current="page" href="#" routerLink="home/:Proid" id="home"  routerLinkActive="active" ><h6>Home</h6></a>
+          </li>
+          <li class="nav-item link2">
+            <a class="nav-link " href="#" routerLink="seller" routerLinkActive="active"><h6>Seller</h6></a>
+          </li>
+        
+          <li class="nav-item link2" *ngIf="!sellermenu">
+            <a class="nav-link " href="#" routerLink="showProduct/:Productid"  ><h6>Products</h6></a>
+          </li>
+          <li class="nav-item link2" *ngIf="sellermenu">
+            <a class="nav-link " href="#" routerLink="addProduct"   ><h6>Add Products</h6></a>
+          </li>
+          <li class="nav-item link2" *ngIf="sellermenu">
+            <a class="nav-link " href="#" routerLink="addCat"   ><h6>Add Categoires</h6></a>
+          </li>
+          
+          <li class="nav-item link2" *ngIf="sellermenu">
+            <a class="nav-link " href="#" routerLink="sellist"  ><h6>List</h6></a>
+          </li>
+          <li class="nav-item link2" *ngIf="!sellermenu">
+            <a class="nav-link " href="#" routerLink="userlogin"  ><h6>User Login</h6></a>
+          </li>
+          <li class="nav-item link2" *ngIf="!sellermenu">
+            <a class="nav-link " href="#" routerLink="userlogin"  ><h6>Search</h6></a>
+          </li>
+         
+          <li class="nav-item link2" *ngIf="sellermenu">
+            <a class="nav-link" href="#" (click)="logout()" ><h6>Logout</h6></a>
+          </li>
+          <li class="nav-item link2" *ngIf="!sellermenu">
+            <a class="nav-link" href="#" (click)="userlogout()" ><h6>UserLogout</h6></a>
+          </li>
+           <li class="nav-item link2" style="position: relative;">
+            <a  class="nav-link  cart_link"  *ngIf="!sellermenu"  (click)="cartOpen()"><i style="font-size: 26px;color:rgb(8, 8, 151)" class="fa-solid fa-cart-arrow-down"></i>{{cartitems}}</a>
+            
+              <div class="cart" [class.changepo]="openCart" style="border-radius: 5px;box-shadow: 3px 5px 11px 0px rgb(76, 77, 77); ;">
+                <div class="main_cart" >
+                  <div  *ngFor="let it of allcartitems" class="items"  >
+                    <div class="img_div"  >
+                      <img class="image" src="{{it.p6}}" >
+                    </div>
+                     
+                    <div class="price_name" >
+                      <h5 class="price" >{{it.p2}} </h5>
+                      <div class="name" >{{it.p1}}</div>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div *ngIf="opeoops" class="empty_cart"  style="width:100%;height:100%;display: flex;justify-content: center;align-items: center;" >
+                  Oops Sorry! No items
+                </div> 
+                   
+                   <div class="total" style="padding:5%;display: flex;justify-content: space-between;" >
+                    <h5>Total</h5>
+                    <h5></h5>
+                   </div>
+                   <div class="cart-btn" style="padding: 5%;" >
+                    <div class="buttn"  style="border:1px solid red;height:45px;width:100%;border: 1px solid rgb(155, 163, 184);display: flex;justify-content: center;align-items: center;">
+                           <h5 style="color:rgb(155, 163, 184)" routerLink="cartpage">VIEW CART</h5>
+                    </div>
+                      
+                   </div>
+              </div>
+            
+           
+          </li>
+          
+        </ul>
+        <!-- <form class="d-flex" *ngIf="!sellermenu">
+          <input #serchitem class="form-control me-2"  type="search" placeholder="Search" aria-label="Search">
+          <button  class="btn btn-outline-success" type="submit" (click)="serch(serchitem.value)">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid" *ngIf="opensrch  && srchProducts.p1 ">
+    <div class="row" *ngIf="forshowinginhome" style="padding:1%">
+      <div class="col-lg-3"  style="padding:1%">
+          <div class="card" style="width: 18rem; ">
+              <img [src]="srchProducts.p6" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <h6></h6>
+                <h6 style="display:none"></h6>
+                <p class="card-text"></p>
+                <div class="display:flex;">
+                  <a  class="btn btn-primary" style="font-size: 14px;">ADD TO CART</a>
+                 
+                  <a  class="btn btn-primary" style="font-size: 14px;margin-left: 10px;">View Product</a>
+                </div>
+                
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  

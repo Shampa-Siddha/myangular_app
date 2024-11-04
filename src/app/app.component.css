@@ -1,0 +1,15 @@
+
+.active{
+    color:yellow;
+}
+.products:hover .pro_image{
+    transform: scale(1.1);
+    transition: all 0.3s ;
+  }
+  .cart{
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .products:hover .cart{
+    transform: translateX(-45px);
+  }

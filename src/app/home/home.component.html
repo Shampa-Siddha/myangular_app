@@ -1,0 +1,536 @@
+<style>
+  .banner2_head{
+    
+    position: relative;
+  }
+  .banner2_head::after{
+    content: "";
+    width:30%;
+    height:1px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    right:-35%;
+
+  }
+</style>
+
+<!-- <table class="table table-bordered">
+    
+    <tbody>
+        <tr *ngFor="let item of inputel">
+            <td><input type="text" placeholder="{{item.name}}"></td>
+            <th ><input type="text" placeholder="{{item.name}}"></th>
+            <td><input type="text"placeholder="{{item.name}}"></td>
+            <td><input type="text"placeholder="{{item.name}}"></td>
+           
+            <td colspan="2"><button (click)="delete()">Delete</button></td>
+          </tr>
+      <button (click)="add()">add</button>
+    </tbody>
+  </table> -->
+  
+ 
+  <!-- <span  *ngFor="let item of steplist" (click)="show(item) " [class.active]="item.name==activestep.name">{{item.name}}</span>
+         
+  <div *ngIf="activestep.name=='step1'" >
+  data1  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore soluta debitis quae explicabo nobis odio! Non, vitae repellat illum similique ullam soluta libero adipisci eos enim? Earum, quasi minima.
+  <button (click)="gotostep2()">next</button>
+</div>
+  <div *ngIf="activestep.name=='step2'" >
+    data2  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore soluta debitis quae explicabo nobis odio! Non, vitae repellat illum similique ullam soluta libero adipisci eos enim? Earum, quasi minima.
+  <button (click)="gotostep3()">next</button>
+</div>
+  <div *ngIf="activestep.name=='step3'" >
+    data3  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore soluta debitis quae explicabo nobis odio! Non, vitae repellat illum similique ullam soluta libero adipisci eos enim? Earum, quasi minima.
+  <button>next</button>
+</div> -->
+    
+<!-- <div class="container-fluid">
+
+  <div class="row" style="padding:1%">
+    <div class="col-lg-3"  *ngFor="let Product of Productlist" style="padding:1%">
+        <div class="card" style="width: 18rem; ">
+            <img [src]="Product.p6" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6></h6>
+              <h6 style="display:none"></h6>
+              <p class="card-text"></p>
+              <div class="display:flex;">
+                <a  class="btn btn-primary" style="font-size: 14px;">ADD TO CART</a>
+               
+                <a  class="btn btn-primary" style="font-size: 14px;margin-left: 10px;">View Product</a>
+              </div>
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container-fluid main-container" style="padding: 0;margin: 0;width: 100vw;">
+  <div *ngIf="openalert"  class="alertbox" style="display: flex;justify-content: center;align-items: center;position:fixed;width:100%;height:30vh;top:20%;left:0;background-color:transparent;z-index: 9999;;" >
+    
+      <div class="al" style="width:23%;height:100%;background-color:rgb(155, 163, 184) ;color:#fff;border-radius: 5px;padding-top: 5%;text-align: center;">PRODUCT ADDED
+        <button (click)="closealeert()" style="border: none;">OK</button>
+      </div>
+      
+    
+  
+
+  </div>
+  <div *ngIf="!opensinglecat && !opensinglefeaturepro" class="container sm-container" >
+    <div class="row" style="height:100%;margin-top: 10vh;" >
+      <div class="col-lg-6 col-md-12 col-sm-12 sec">
+        <div class="col-lg-12" style="height: 100%;">
+             <h3 style="font-size: 35px;color:aliceblue">Find the perfect phone of your </h3>
+             
+             <h2 style="font-size: 100px;color: #4444dd;"><span style="color:aliceblue">CH</span>oice</h2>
+             <h6 style="font-size: 14px;color:white">Planning for Online Mobile Shopping? Visit us now to explore everything about mobile phones including mobile prices, reviews, comparisons, features, videos, ...</h6>
+             <br>
+             <div class="num_counter" style="height:150px;border:1px solid white;width: 100%;display:flex;align-items: center;justify-content: space-around;">
+                 <div class="num_content" >
+                     <div class="num">
+                         {{startValue}}M
+                     </div>
+                     <div class="content">
+                        Buyers
+                     </div>
+                 </div>
+                 <div class="num_content">
+                    <div class="num" >
+                      {{startValue}}M
+                    </div>
+                    <div class="content">
+                       Visitors
+                    </div>
+
+                </div>
+                <div class="num_content">
+                  <div class="num">
+                    {{startValue}}M
+                  </div>
+                  <div class="content">
+                     Clients
+                  </div>
+
+              </div>
+
+
+             </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 sec">
+        <div class="row" style="height:100%">
+          <div class="col-lg-12" style="height: 100%;display: flex;align-items: center;justify-content: center;">
+            <div class="row" style="padding:2%;width:100%">
+              <div class="col-lg-6" style="padding:2%;padding-top: 110px;width:50%">
+                <div class="img-div1" >
+                   <img src="assets/Homebannerimage/bannerimg1.jpg">
+                </div>
+  
+              </div>
+              <div class="col-lg-6" style="padding:2% ;width: 50%;">
+                 <div class="img-div2"  >
+                  <img src="assets/Homebannerimage/bannerimg2.jpg">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!opensinglecat && !opensinglefeaturepro" class="main_cat" style="width:100vw;margin-top: 5vh;">
+    <h1 style="text-align: center;color:#fff">CHOOSE BY CATEGORY</h1>
+    <br>
+    <br>
+   <div class="container" style="width:100%;height:100%;display: flex;justify-content: center;">
+   
+    <div class="row" style="width:100%;height:100;overflow: hidden;">
+      <div class="col-lg-2 col-md-2 col-sm-2 col-3" *ngFor="let item of Categorylist" style="padding:2%;height:100%;height:100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <div (click)="openCat(item.p1)" class="cat-circle" style="cursor: pointer;;width:60px;border-radius:50%;height:60px;overflow: hidden;display: flex;justify-content: center;align-items: center;">
+                <img src="{{item.p2}}" style="width:100%">
+            </div>
+            <div class="cat-circle-name" style="cursor: pointer;;padding: 1%;margin-top: 10%;color:white;font-weight: 700;">
+              {{item.p1}}
+            </div>
+      </div>
+     
+    </div>
+   </div>
+  </div>
+<!---------------------------------single category---------------------------------------->
+<div *ngIf="opensinglecat && !singlepro" class="sinlgehomecat" style="width:100%;">
+  <br>
+  <br>
+  
+<div  class="row" style="background-color: #fff;">
+  <div  class="col-lg-12" style="padding:1%">
+    <h5  style="text-align: center;color:rgb(212, 212, 212)"> OUR PRODUCTS </h5>
+    <BR>
+      <div (click)="CloseSinglePage2()" class="back-arrow" ><button style="border: none;width:5vw"  >
+        <i class="fa-solid fa-arrow-left"></i>
+      </button></div>
+      <div  class="row"  style="border: 1px solid rgb(226, 226, 226);padding: 2%;">
+        <div *ngFor="let item of singlecatitems"  class="col-lg-2 col-s-6 col-6"   style="padding:5px">
+          <div class="products" style="padding:3%;position: relative;overflow: hidden;border: 1px solid rgb(204, 204, 204);">
+            <div class="img_div" style="display: flex;justify-content: center;align-items: center;">
+             <a >
+              <img class="pro_image" src="{{item.p8}}"  style="height:auto;width:70%">
+             </a> 
+             
+            </div>
+             
+             <div class="content" style="margin-top:10px;" >
+                <h3 style="color:black;font-size: 85%;font-weight: bold;">{{item.p1}}</h3>
+                <h6 style="font-size: 11px;color: grey;">{{item.p4}}</h6>
+                <div class="price" style="display:flex;justify-content: space-between;">
+                 <h6 style="color: black;font-size: 70%;" ><span style="margin-right: 10px;">Price :</span>{{item.p2}} </h6>
+                 <h6 style=" font-size:70%;text-decoration: line-through; color: red;">$32987</h6>
+                </div>
+                
+             </div>
+            <div (click)="addtoCart(item.id)" class="cart" style="background-color: rgb(250, 250, 250);width:40px;height:40px;border-radius:50%;position: absolute;top:20px;right:-40px;display:flex;justify-content: center;align-items: center;">
+              <i style= "color:rgb(155, 163, 184)"class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="cart" style="background-color: rgb(250, 250, 250);width:40px;height:40px;border-radius:50%;position: absolute;top:70px;right:-40px;display:flex;justify-content: center;align-items: center;">
+              <i  style= "color:rgb(155, 163, 184)" class="fa-solid fa-heart" ></i>
+            </div>
+            <div class="cart" (click)="openSinglePro(item.id)" style="width:40px;height:40px;border-radius:50%;position: absolute;top:120px;right:-40px;display:flex;justify-content: center;align-items: center;">
+             <a ><i routerLink="/showProduct/" style= "color:rgb(155, 163, 184)" class="fa-solid fa-eye" ></i></a> 
+            </div>
+          </div>
+        </div>
+       
+        
+      </div>
+        <!-- <div class="row"  style="border: 1px solid rgb(226, 226, 226);padding: 2%;">
+          <div  class="col-lg-3 col-s-6 col-6"   style="padding:5px;">
+            <div  class="products" style="padding:3%;position: relative;overflow: hidden;border: 1px solid rgb(204, 204, 204);">
+              <div class="img_div" style="display: flex;justify-content: center;align-items: center;height: 27vh;">
+                <img class="pro_image"  style="height:auto;width:80%">
+               
+              </div>
+               
+               <div class="content" style="margin-top:10px;" >
+                  <h3 style="color:black;font-size: 85%;font-weight: bold;">Samsung</h3>
+                  <h6 style=" white-space: nowrap;;height:20px;font-size: 11px;color: grey;overflow: hidden !important; text-overflow:ellipsis;width:200px;">,dnf fkdjfkd khdkfh  hdfkh dhfkj</h6>
+ 
+                  <div class="price" style="display:flex;justify-content: space-between;">
+                   <h6 style="color: black;font-size: 70%;" ><span style="margin-right: 10px;">Price :</span>12344</h6>
+                   <h6 style=" font-size:70%;text-decoration: line-through; color: red;">$32987</h6>
+                  </div>
+                  
+               </div>
+              <div   class="cart" style="background-color: rgb(250, 250, 250);width:40px;height:40px;border-radius:50%;position: absolute;top:20px;right:-40px;display:flex;justify-content: center;align-items: center;">
+                <i style= "color:rgb(155, 163, 184)"class="fa-solid fa-cart-shopping" ></i>
+              </div>
+              <div class="cart" style="background-color: rgb(250, 250, 250);width:40px;height:40px;border-radius:50%;position: absolute;top:70px;right:-40px;display:flex;justify-content: center;align-items: center;">
+                <i  style= "color:rgb(155, 163, 184)" class="fa-solid fa-heart"></i>
+              </div>
+              <div class="cart"  style="background-color: rgb(250, 250, 250);width:40px;height:40px;border-radius:50%;position: absolute;top:120px;right:-40px;display:flex;justify-content: center;align-items: center;">
+               <a><i  style= "color:rgb(155, 163, 184)" class="fa-solid fa-eye"></i></a> 
+              </div>
+            </div>
+          </div>
+         
+        </div> -->
+      
+  </div>
+</div>
+</div>
+<!--------------------------------------single product page----------------------------------------------->
+<div *ngIf="singlepro || opensinglefeaturepro  " class="container-fluid" style="margin-bottom: 50px;background-color: #fff;"  >
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div  class="row"  style="position: relative;">
+   <div (click)="CloseSinglePage()" class="back-arrow" style="position: absolute;top:-5vh;left:0;">
+    <button style="border: none;width:5vw"  >
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+   </div>
+  <div class="col-lg-6 " style="height:100%;">
+    <div *ngFor="let item of singlecatitems" class="col-lg-12 col-12 col-sm-12 col-md-12" style="border:1px solid rgb(236, 236, 236);height: 100%;width: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+      <div class="row" style="overflow: hidden;height:70vh;border: 1px solid rgb(221, 220, 220);width: 100%;display: flex;justify-content: center;align-items: center;">
+        <img *ngIf="!OpenSource" src="{{item.p6}}"   style="width:70%">
+         <img src="{{Source}}"  style="width:60%"> 
+      </div>
+      <div class="row"  style="height:20%;padding:1%;width:100%;display: flex;justify-content: space-between;">
+        <div    class="img1 col-lg-4 col-4 col-sm-4 col-md-4" >
+          <img (click)="gettingimg(item.p6)" src="{{item.p6}}" #img1  style="width: 50%">
+        </div>
+        <div     class="img2 col-lg-4 col-4 col-sm-4 col-md-4" >
+          <img (click)="gettingimg(item.p7)" src="{{item.p7}}" #img2   style="width: 50%">
+        </div>
+        <div    class="img3 col-lg-4 col-4 col-sm-4 col-md-4" >
+          <img (click)="gettingimg(item.p8)" src="{{item.p8}}" #img3   style="width: 50%">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div *ngFor="let item of singlecatitems" class="col-lg-6" style="height:100%;padding:2%;">
+    <h4>
+      {{item.p1}} (Ice Blue, 128 GB)  (8 GB RAM)
+    </h4>
+    <h3 style="color:red">{{item.p2}}</h3>
+    <div style="margin-top: 30px;">
+      <h6 style="color:rgb(104, 104, 104);font-weight:400;line-height:30px;text-align: justify;">
+       {{item.p4}}
+      </h6>
+
+    </div>
+    <div style="margin-top:30px ;display: flex;justify-content:flex-start;margin-bottom: 30px;">
+      <div style="border: 1px solid rgb(175, 175, 175);height:50px;width:100px;display: flex;justify-content: space-between;align-items: center;padding: 1%;">
+        <div  style="cursor: pointer;" (click)="decreasequantity()" >-</div>
+              <div>{{count}}</div>
+              
+              <div style="cursor: pointer;" (click)="increasequantity()" >+</div>
+      </div>
+      <div (click)="addtoCart(item.id)"  style="font-weight: 600;align-items: center;justify-content: center;display: flex;margin-left: 20px;height:50px;width:130px;background-color: rgb(231, 231, 231);display: flex;justify-content: space-between;align-items: center;padding: 1%;">
+          ADD TO CART
+       </div>
+       <!-- <div *ngIf="removeCart"  style="font-weight: 600;align-items: center;justify-content: center;display: flex;margin-left: 20px;height:50px;width:130px;background-color: rgb(231, 231, 231);display: flex;justify-content: space-between;align-items: center;padding: 1%;">
+        REMOVE CART
+     </div> -->
+
+    </div>
+    <div>
+       <h5 style="color:grey;font-weight: 400;">CATEGORIES:</h5>
+    </div>
+    <div>
+
+    </div>
+
+    
+  </div>
+  </div>
+    
+</div>
+  <!---------------------------------caraousel -------------------------------->
+   <div *ngIf="!opensinglecat && !opensinglefeaturepro" class="container-fluid caraousel-container" style="padding: 0;width:100%;margin-top: 80px;">
+    
+    <div class="caraousel" style="width:100%;overflow: hidden;" >
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="object-fit: cover;position: relative;">
+            <img style="height:55vh;object-fit: cover;object-position:71% 40%;" src="assets/Homebannerimage/phonbanner1.jpg" class="d-block w-100" alt="...">
+            <div class="content" style="position: absolute;z-index: 999;top:28%;left:12%">
+              <h1>DON'T JUST BUY A PHONE</h1>
+              <h4 style="color:gold">Buy quality assured products</h4>
+              <h6>Buy phone anytime anwhere </h6>
+              <br>
+              <button style="width:22vh;height:6vh;border: none;background-color:#fff ;color:gold;align-content: center;font-weight: bold;" >Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item " style="object-fit: cover;">
+            <img style="height:55vh;object-fit: cover;object-position:70% 40%;" src="assets/Homebannerimage/phonbanner2.jpg" class="d-block w-100" alt="...">
+            <div class="content" style="position: absolute;z-index: 999;top:28%;left:12%">
+              <h1 class="banner2_head" >IT'S NOT JUST A <span style="color:gold;">SALE</span></h1>
+              <h4 style="color:rgb(255, 60, 0)">It's Happy Hours <span style="color:white">FLAT</span> <span style="color:gold">50%</span> <span style="color:#fff">OFF</span></h4>
+             
+              <br>
+              <button style="width:22vh;height:6vh;border: none;background-color:#fff ;color:rgb(255, 60, 0);align-content: center;font-weight: bold;" >Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item " style="object-fit: cover;">
+            <img style="height:55vh;object-fit: cover;object-position:71% 40%;" src="assets/Homebannerimage/phonbanner3.jpg" class="d-block w-100" alt="...">
+             <div class="content" style="position: absolute;z-index: 999;top:28%;left:12%">
+              <h1>DON'T JUST BUY A PHONE</h1>
+              <h4 style="color:rgb(6, 20, 143)">Buy quality assured products</h4>
+              <h6>Buy phone anytime anwhere </h6>
+              <br>
+              <button style="width:22vh;height:6vh;border: none;background-color:#fff ;color:rgb(6, 20, 143);align-content: center;font-weight: bold;" >Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+   
+   </div>
+
+   <!-------------------------------------Featured Products---------------------------------------------->
+   
+   
+   <div *ngIf="!opensinglecat && !opensinglefeaturepro" class="row">
+    
+      <div class="container-fluid featurecontainer" style="height:auto;width:100%;background-color: white;">
+        <br>
+        <h3 style="text-align: center;color:rgb(155, 163, 184);font-weight: bold;"><span style="color:#4444dd">FEATURED</span> PRODUCTS</h3>
+         <div class="row" style="padding: 4%;">
+           <div *ngFor="let item of Productlist" class="col-lg-3 col-s-6 col-6" style="padding:2%">
+             <div class="products" style="position: relative;overflow: hidden;background-color: #fff;">
+               <div class="img_div">
+                 <img class="pro_image"  src="{{item.p6}}">
+                 <img style="width:90px;height:65px;position: absolute;top:-15%;left:-18%" class="tag" src="assets/Homebannerimage/tag-removebg-preview.png">
+               </div>
+                
+                <div class="content" style="margin-top:10px;" >
+                   <h3 style="color:black;font-size: 85%;font-weight: bold;">{{item.p1}}</h3>
+                   <h6 style="font-size: 11px;color: grey;overflow: hidden !important; text-overflow:ellipsis;width:20vh;white-space:nowrap;height:20px">{{item.p4}}</h6>
+                   <div class="price" style="display:flex;justify-content: space-between;">
+                    <h6 style="color: black;font-size: 70%;" ><span style="margin-right: 10px;">Price :</span> {{item.p2}}</h6>
+                    <h6 style=" font-size:70%;text-decoration: line-through; color: red;">$32987</h6>
+                   </div>
+                   
+                </div>
+               <div (click)="addtoCart(item.id)" class="cart" style="background-color: white;width:40px;height:40px;border-radius:50%;position: absolute;top:20px;right:-40px;display:flex;justify-content: center;align-items: center;">
+                 <i style= "color:rgb(155, 163, 184)"class="fa-solid fa-cart-shopping"></i>
+               </div>
+               <div *ngIf="!color" routerLink="/home/{{item.id}}"  (click)="wishlist(item.id)"  class="cart" style="background-color: white;width:40px;height:40px;border-radius:50%;position: absolute;top:70px;right:-40px;display:flex;justify-content: center;align-items: center;">
+                 <i  style= "color:rgb(155, 163, 184)"    class="fa-solid fa-heart"></i>
+               </div>
+               <div  *ngIf="color"  class="cart" style="background-color: white;width:40px;height:40px;border-radius:50%;position: absolute;top:70px;right:-40px;display:flex;justify-content: center;align-items: center;">
+                <i style= "color:red"    class="fa-solid fa-heart"></i>
+              </div>
+               <div class="cart" (click)="Openfeaturesinglepro(item.id)" style="background-color: white;width:40px;height:40px;border-radius:50%;position: absolute;top:120px;right:-40px;display:flex;justify-content: center;align-items: center;">
+                 <i routerLink="/showProduct/" style= "color:rgb(155, 163, 184)" class="fa-solid fa-eye"></i>
+               </div>
+             </div>
+         </div>
+      
+         </div>
+      </div>
+     
+   </div>
+  <!---------------------------------client's feedback-->
+ 
+ <div *ngIf="!opensinglecat && !opensinglefeaturepro" class="row">
+  <div class="container clientscontainer" style="padding:5%;">
+    <h3 style="text-align: center;color: aliceblue;">Let's See What Our Clients Are Saying</h3>
+    <div class="row" style="padding:1%;margin-top: 50px;">
+       <div class="col-lg-3 col-md-3 col-6" style=" height:500px">
+         <div class="row" style="padding: 2%;height: 50%;">
+           <div  class="col-lg-12 mainclientdiv" style="border-radius: 10px;width:100%;background-image: url('assets/Homebannerimage/person1.webp');background-position: center;background-size: cover;" >
+                 
+                 <div class="clientswriting  cl1" style="width: 100%;" >
+                  <div style="width: 100%;background-color: white;">
+                    <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY </span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+                  </div>
+                   
+                 </div>
+                
+           </div>
+
+         </div>
+         <div class="row"  style="padding: 2%;height: 50%;">
+            <div class="col-lg-12 mainclientdiv" style="border-radius: 10px;height: 100%;overflow: hidden;padding:0;background-image: url('assets/Homebannerimage/person2.jpg');background-position: center;background-size: cover;">
+              <div class="clientswriting  cl2" style="width: 100%;" >
+                <div style="width: 100%;background-color: white;">
+                  <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY </span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+                </div>
+                 
+               </div>
+           </div>
+          
+         </div>
+
+       </div>
+       <div class="col-lg-3  col-md-3 col-6" style="height:500px">
+         <div class="row" style="height:60%;padding: 2%;" >
+            <div class="col-lg-12 mainclientdiv" style="border-radius: 10px;height:100%;overflow: hidden;padding:0;object-fit: cover;background-image: url('assets/Homebannerimage/person8.webp');background-position: center;background-size: cover;">
+              <div class="clientswriting  cl3" style="width: 100%;" >
+                <div style="width: 100%;background-color: white;">
+                  <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY 1</span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+                </div>
+                 
+               </div>
+            </div>
+           
+         </div>
+         <div class="row" style="height:40%;padding: 2%;" >
+          <div class="col-lg-12 mainclientdiv" style="border-radius: 10px;height:100%;overflow: hidden;padding:0;background-image: url('assets/Homebannerimage/person4.avif');background-position: center;background-size: cover;">
+            <div class="clientswriting  cl4" style="width: 100%;" >
+              <div style="width: 100%;background-color: white;">
+                <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY2 </span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+              </div>
+               
+             </div>
+          </div>
+         
+       </div>
+       </div>
+       <div class="col-lg-3  col-md-3 col-6 " style="height:500px">
+         <div class="row" style="height:30%;padding: 2%;">
+           <div class="col-lg-12 mainclientdiv" style="border-radius: 10px;height:100%;overflow: hidden;padding: 0;background-image: url('assets/Homebannerimage/person7.webp');background-position: center;background-size: cover;">
+            <div class="clientswriting  cl5" style="width: 100%;" >
+              <div style="width: 100%;background-color: white;">
+                <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY3 </span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+              </div>
+               
+             </div>
+           </div>
+         </div>
+         <div class="row"  style="height:70%;padding: 2%">
+            <div class="col-lg-12 mainclientdiv" style="border-radius: 10px;height: 100%;overflow: hidden;padding:0;background-image: url('assets/Homebannerimage/person5.avif');background-position: center;background-size: cover;">
+              <div class="clientswriting  cl6" style="width: 100%;" >
+                <div style="width: 100%;background-color: white;">
+                  <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY4 </span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+                </div>
+                 
+               </div>
+           </div>
+         </div>
+
+       </div>
+       <div class="col-lg-3  col-md-3  col-6 " style="height:500px">
+         <div class="row" style="height:70%;padding: 2%;">
+           <div class="col-lg-12 mainclientdiv" style="height:100%;overflow: hidden;padding: 0;object-fit: cover;display: flex;background-image: url('assets/Homebannerimage/person6.jfif');border-radius: 10px;background-position: center;">
+            <div class="clientswriting cl7" style="width: 100%;" >
+              <div style="width: 100%;background-color: white;">
+                <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY5 </span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+              </div>
+               
+             </div>
+           </div>
+         </div>
+         <div class="row"  style="height:30%;padding: 2%" >
+            <div class="col-lg-12 mainclientdiv" style="height: 100%;overflow: hidden;padding:0;object-fit: cover;background-image: url('assets/Homebannerimage/person3.jpg');background-position: bottom;border-radius: 10px;">
+              <div class="clientswriting cl8" style="width: 100%;" >
+                <div style="width: 100%;background-color: white;">
+                  <span style="font-weight: bold;text-align:center;"> LEENA DEL ROY 6</span><BR><span style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat repudiandae ratione incidunt harum ipsum. Incidunt beatae laborum assumenda praesentium, quaerat laboriosam veritatis minus cumque, in aut recusandae quod rem.</span>
+                </div>
+                 
+               </div>
+           </div>
+         </div>
+
+       </div>
+    </div>
+    
+
+  
+  </div>
+ </div>
+ 
+
+ <!-------------------------------------------->
+   
+ </div>
+
