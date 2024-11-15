@@ -47,6 +47,8 @@ export class HomeComponent implements OnInit{
 constructor(private http :MyserviceService, private route:Router,private activeRoute:ActivatedRoute){}
 productdata:any=[]
 ngOnInit(): void {
+
+  
   this.getProducts();
   this.counter();
   this.getCtegorylist();
@@ -54,6 +56,7 @@ ngOnInit(): void {
   let proid=this.activeRoute.snapshot.paramMap.get('Proid')
   let pro=proid && String(proid)
   console.log(pro)
+  
   this.http.GetProducts2(pro).subscribe((res)=>{
     console.log(res)
     this.productdata=res
@@ -80,7 +83,17 @@ ngOnInit(): void {
   
  let user=localStorage.getItem('SingleUser');
  console.log("userr")
-
+if(user){
+  let userid= user && JSON.parse(user).id;
+    this.http.getCartlist(userid);
+  this.http.CarData.subscribe((res)=>{
+     console.log(res)
+  })
+ 
+}
+else{
+    alert("no user")
+}
  
   
   //  let userid= user && JSON.parse(user).id;

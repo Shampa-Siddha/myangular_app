@@ -35,9 +35,14 @@ export class HeaderComponent implements OnInit {
   allcartitems:any=[];
   Price:any=""
   opeoops:boolean=true
+  singleusername:any=true;
 ngOnInit(): void {
   
+let user=localStorage.getItem("SingleUser")
+if(user){
+   this.singleusername=JSON.parse(user).username
 
+}
   this.route.events.subscribe((val:any)=>{
     
      this.url=val.url;

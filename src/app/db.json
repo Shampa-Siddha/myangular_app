@@ -53,6 +53,13 @@
       "phone": "8902536465",
       "email": "santoshroy88115@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "0579",
+      "name": "Shampa",
+      "phone": "8902536465",
+      "email": "shampa@gmail.com",
+      "password": "1234"
     }
   ],
   "Products": [
@@ -412,20 +419,6 @@
       "quantity": 1,
       "userid": "13ed",
       "productid": "d4b5"
-    },
-    {
-      "id": "ec9f",
-      "p1": "iphone",
-      "p2": "3864832",
-      "p3": "pink",
-      "p4": "nice phone",
-      "p5": "phone",
-      "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
-      "p7": "",
-      "p8": "",
-      "quantity": 1,
-      "userid": "13ed",
-      "productid": "010f"
     }
   ],
   "CategoryName": [

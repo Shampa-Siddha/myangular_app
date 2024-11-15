@@ -14,7 +14,7 @@ import { UserlogoutComponent } from './userlogout/userlogout.component';
 import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/home/:Proid', pathMatch: 'full' },
+  { path: '',   redirectTo:'userlogin', pathMatch: 'full' },
   {path:'home/:Proid',component:HomeComponent},
   {path:'seller',component:SellerComponent},
   {path:'userlogin',component:UserLoginComponent},

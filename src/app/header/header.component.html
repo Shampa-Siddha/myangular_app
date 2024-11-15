@@ -7,7 +7,10 @@
   @media screen and (min-device-width: 900px) and (max-device-width: 2000px) { 
     
     .link2{
-      padding-left: 5vw;
+      padding-left: 4vw;
+    }
+    .link3{
+      padding-left: 7vw;
     }
     .rescart{
       display: none;
@@ -232,7 +235,7 @@ position: fixed;
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="display:flex;justify-content: space-between;">
           <li class="nav-item link2" *ngIf="!sellermenu">
-            <a class="nav-link active" aria-current="page" href="#" routerLink="home/:Proid" id="home"  routerLinkActive="active" ><h6>Home</h6></a>
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/home/:Proid" id="home"  routerLinkActive="active" ><h6>Home</h6></a>
           </li>
           <li class="nav-item link2">
             <a class="nav-link " href="#" routerLink="seller" routerLinkActive="active"><h6>Seller</h6></a>
@@ -255,7 +258,7 @@ position: fixed;
             <a class="nav-link " href="#" routerLink="userlogin"  ><h6>User Login</h6></a>
           </li>
           <li class="nav-item link2" *ngIf="!sellermenu">
-            <a class="nav-link " href="#" routerLink="userlogin"  ><h6>Search</h6></a>
+            <a class="nav-link " href="#" routerLink="showProduct/:Productid"  ><h6>Search</h6></a>
           </li>
          
           <li class="nav-item link2" *ngIf="sellermenu">
@@ -298,6 +301,10 @@ position: fixed;
               </div>
             
            
+          </li>
+          <li class="nav-item link3" *ngIf="!sellermenu" style="line-height: 10px;text-align: center;">
+            <a style="padding: 0;" class="nav-link" href="#"  ><h6><i class="fa-solid fa-user" style="font-size: 20px;" ></i></h6></a>
+            <h6 style="font-size: 2vh;">{{ singleusername}} </h6>
           </li>
           
         </ul>

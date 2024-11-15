@@ -40,22 +40,21 @@ export class MyserviceService {
   }
   logged(data:any){
     localStorage.setItem('seller',JSON.stringify(this.userlist));
-    let seller={email:data.l1,password:data.l2}
     
     
-   for(let i of this.userlist){
-     console.log(i)
-     if(i.email===seller.email && i.password===seller.password){
+    console.log(data)
+  
+
+     if(data.t3==="shampa@gmail.com" && data.t4==="1234"){
+  
       this.isloggedin=true;
-      
-      this.router.navigate(['home']);
+       this.router.navigate(['sellist'])
        
-       this.router.navigate(['/home'])
-       break
+      
      }
     
      
-   }
+   
  }
   //------------------------------------------seller login registration auth local storage ends------------------//
 PostProducts(data:any){
