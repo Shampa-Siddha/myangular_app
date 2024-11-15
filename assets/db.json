@@ -1,0 +1,435 @@
+{
+    "seller": [
+      {
+        "name": "shampa siddha",
+        "phone": "8145787352",
+        "email": "abc@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "3e5c",
+        "l1": "abc@gmail.com",
+        "l2": "1234"
+      },
+      {
+        "id": "ea16",
+        "name": "",
+        "phone": "",
+        "email": "abc@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "3d35",
+        "name": "Santosh",
+        "phone": "9485094",
+        "email": "santosh@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "3952",
+        "name": "santosh",
+        "phone": "49385934",
+        "email": "santosh@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "3b36",
+        "name": "Sanju",
+        "phone": "8145787352",
+        "email": "sanju8582@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "3afa",
+        "name": "Ganesh",
+        "phone": "8902536465",
+        "email": "santoshroy88115@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "a8a3",
+        "name": "Ganesh",
+        "phone": "8902536465",
+        "email": "santoshroy88115@gmail.com",
+        "password": "123456"
+      },
+      {
+        "id": "0579",
+        "name": "Shampa",
+        "phone": "8902536465",
+        "email": "shampa@gmail.com",
+        "password": "1234"
+      }
+    ],
+    "Products": [
+      {
+        "id": "fccb",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg"
+      },
+      {
+        "id": "010f",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": ""
+      },
+      {
+        "id": "d4b5",
+        "p1": "Samsung",
+        "p2": "27987",
+        "p3": "purple",
+        "p4": "nice iphone",
+        "p5": "Phone",
+        "p6": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1662703105/Croma%20Assets/Communication/Mobiles/Images/261963_oqrd6j.png?tr=w-600",
+        "p7": "https://www.digitaltrends.com/wp-content/uploads/2023/09/iphone-15-pro-purple.jpg?fit=720%2C479&p=1",
+        "p8": "https://letsmobideal.com/wp-content/uploads/2023/01/i12-purple.gif"
+      }
+    ],
+    "User": [
+      {
+        "id": "13ed",
+        "username": "Santosh",
+        "usernumber": "9433287925",
+        "useremail": "santoshroy88115@gmail.com",
+        "userpassword": "123456"
+      },
+      {
+        "id": "c83d",
+        "username": "shampa Siddha",
+        "usernumber": "8145787352",
+        "useremail": "shampa@gmail.com",
+        "userpassword": "1234"
+      },
+      {
+        "id": "dc1d",
+        "username": "Sanju",
+        "usernumber": "9433287925",
+        "useremail": "sanju2gmail.com",
+        "userpassword": "1234"
+      },
+      {
+        "id": "8985",
+        "username": "Sanju",
+        "usernumber": "9433287925",
+        "useremail": "sanju2gmail.com",
+        "userpassword": "1234"
+      },
+      {
+        "id": "e61f",
+        "username": "Ganesh",
+        "usernumber": "8145787352",
+        "useremail": "ganesh88115@gmail.com",
+        "userpassword": "123"
+      }
+    ],
+    "Cart": [
+      {
+        "id": "be51",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "d7c3",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "241c",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "4c03",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "24c5",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "a49b",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "30a1",
+        "p1": "iphone",
+        "p2": "3864832",
+        "p3": "pink",
+        "p4": "nice phone",
+        "p5": "phone",
+        "p6": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGV4VWh5Y2UwMXBvc0pMNmE5MmxpdHg=&traceId=1",
+        "p7": "",
+        "p8": "",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "010f"
+      },
+      {
+        "id": "1fda",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 0,
+        "userid": "13ed",
+        "productid": "fccb"
+      },
+      {
+        "id": "62ab",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 0,
+        "userid": "8985",
+        "productid": "fccb"
+      },
+      {
+        "id": "d0a9",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 0,
+        "userid": "8985",
+        "productid": "fccb"
+      },
+      {
+        "id": "ba9f",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 0,
+        "userid": "e61f",
+        "productid": "fccb"
+      },
+      {
+        "id": "1197",
+        "p1": "Samsung",
+        "p2": "27987",
+        "p3": "purple",
+        "p4": "nice iphone",
+        "p5": "Phone",
+        "p6": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1662703105/Croma%20Assets/Communication/Mobiles/Images/261963_oqrd6j.png?tr=w-600",
+        "p7": "https://www.digitaltrends.com/wp-content/uploads/2023/09/iphone-15-pro-purple.jpg?fit=720%2C479&p=1",
+        "p8": "https://letsmobideal.com/wp-content/uploads/2023/01/i12-purple.gif",
+        "quantity": 0,
+        "userid": "e61f",
+        "productid": "d4b5"
+      },
+      {
+        "id": "cefc",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 0,
+        "userid": "c83d",
+        "productid": "fccb"
+      },
+      {
+        "id": "8636",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 0,
+        "userid": "c83d",
+        "productid": "fccb"
+      },
+      {
+        "id": "1c2a",
+        "p1": "Samsung S23",
+        "p2": "39,999",
+        "p3": "ivory",
+        "p4": "This is a very nice phone",
+        "p5": "Samsung",
+        "p6": "https://m.media-amazon.com/images/I/617l83eY1rL.jpg",
+        "p7": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaF_fS4kFrBigcuXKc0GmNa82jjXWynwnvA&s",
+        "p8": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaF_fS4kFrBigcuXKc0GmNa82jjXWynwnvA&s",
+        "quantity": 2,
+        "userid": "8985",
+        "productid": "5453",
+        "actualprice": 78
+      },
+      {
+        "id": "0a31",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 3,
+        "userid": "8985",
+        "productid": "fccb",
+        "actualprice": 42
+      },
+      {
+        "id": "9f64",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 2,
+        "userid": "8985",
+        "productid": "fccb",
+        "actualprice": null
+      },
+      {
+        "id": "4df5",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 2,
+        "userid": "8985",
+        "productid": "fccb",
+        "actualprice": 28
+      },
+      {
+        "id": "4dae",
+        "p1": "Samsung",
+        "p2": "14,233",
+        "p3": "blue",
+        "p4": "Samsung Galaxy is a series of mobile devices made by Samsung. Most of them are smartphones and tablet computers that run Android, an operating system made .",
+        "p5": "Phone",
+        "p6": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg",
+        "p7": "https://m.media-amazon.com/images/I/81lek2iav1L._SX569_.jpg",
+        "p8": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX569_.jpg",
+        "quantity": 1,
+        "userid": "8985",
+        "productid": "fccb",
+        "actualprice": 14
+      },
+      {
+        "id": "dc31",
+        "p1": "Samsung",
+        "p2": "27987",
+        "p3": "purple",
+        "p4": "nice iphone",
+        "p5": "Phone",
+        "p6": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1662703105/Croma%20Assets/Communication/Mobiles/Images/261963_oqrd6j.png?tr=w-600",
+        "p7": "https://www.digitaltrends.com/wp-content/uploads/2023/09/iphone-15-pro-purple.jpg?fit=720%2C479&p=1",
+        "p8": "https://letsmobideal.com/wp-content/uploads/2023/01/i12-purple.gif",
+        "quantity": 1,
+        "userid": "13ed",
+        "productid": "d4b5"
+      }
+    ],
+    "CategoryName": [
+      {
+        "id": "24c4",
+        "p1": "Iphone",
+        "p2": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-blue_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OE9pRUNIQm9DazFDRlpxNlpHRkpTcTFRUjVZcnNucDN6ME84Sk5KdjNoWnBRcmhuV0xiN2owaDd6ZUdJRlYrRTlWZmVzdHlTb1ZvUkovcWloS2FZNXJ4Mk1xTE1BM0NnNUZrMHlSKzBKejdRPT0=&traceId=1"
+      },
+      {
+        "id": "cd88",
+        "p1": "Samsung",
+        "p2": "https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg"
+      }
+    ]
+  }
