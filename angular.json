@@ -23,7 +23,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/app/db.json"
+              "src/db.json"
             ],
             "styles": [
               "src/styles.css"
